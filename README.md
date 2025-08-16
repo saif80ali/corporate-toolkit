@@ -1,40 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Corporate Toolkit
 
-## Getting Started
+Corporate Toolkit is a simple yet powerful web application built to make corporate life easier.  
 
-First, run the development server:
+It helps users with:  
+- Hike Calculator – Quickly calculate expected salary hikes based on inputs  
+- Notice Period Calculator – Find your exact last working day with ease  
+- AI-Generated Mail Templates – Generate professional and ready-to-use email drafts for different corporate needs  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- User-friendly interface  
+- Fast and accurate calculations  
+- AI-powered email generation  
+- Saves time in daily corporate tasks  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
+- Frontend: React + Tailwind CSS  
+- Backend: Node.js + Express  
+- AI Integration: OpenAI API  
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Usage
+- Navigate to the tool you want to use (Hike Calculator, Notice Period Calculator, or Mail Templates)  
+- Enter your details  
+- Get instant results or generated email drafts  
+## Installation & Setup
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Install dependencies:  
+  yarn install  
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- Run the local development server:  
+  yarn dev  
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Open in browser:  
+  http://localhost:3000
+## About Me
+Hi 👋, I'm Saif  
 
-## Learn More
+- 💻 A Full Stack Developer with 3+ years of experience in building web applications  
+- 🚀 Skilled in React, Angular, Node.js, Express, and MongoDB  
+- 🎯 Passionate about creating tools that make work life simpler and more efficient  
+- 📚 Always eager to learn and explore new technologies  
+- 🤝 Open to collaboration and exciting project opportunities  
 
-To learn more about Next.js, take a look at the following resources:
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://saif80ali.github.io/my-portfolio)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saif-ali-5ab917171/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
