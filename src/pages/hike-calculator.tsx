@@ -65,7 +65,7 @@ function HikeCalculator() {
       <form>
         <div className="sm:col-span-3">
           <fieldset>
-            <h1 className="text-3xl font-semibold">Salary Hike Calculator </h1>
+            <h1 className="text-3xl font-semibold text-indigo-700">Salary Hike Calculator </h1>
             <div className="mt-6 flex gap-x-6 items-center">
               <div className="flex items-center gap-x-3">
                 <input
