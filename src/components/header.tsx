@@ -2,13 +2,15 @@ import React from 'react'
 
 export default function header() {
   return (
-    <header className="border-b border-gray-950/5 dark:border-white/10">
-        <div  aria-label="Global" className="mx-auto flex items-center p-4 lg:px-8">
-            <a href="#" className="-m-1.5 p-1.5 mr-2">
-                <span className="sr-only">Corporate toolkit</span>
-                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" className="h-8 w-auto" />
-            </a>
-            <h2 className="text-2xl/7 font-bold text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Corporate toolkit</h2>
+    <header className="border-b border-gray-950/5 dark:border-white/10 px-4 py-2">
+      <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-600 to-indigo-700 flex items-center justify-center text-white font-bold shadow-lg">
+            CT
+          </div>
+          <div>
+            <h1 className="text-lg font-semibold text-indigo-600">Corporate Toolkit</h1>
+            <p className="text-sm text-slate-500">Tools for faster workflows</p>
+          </div>
         </div>
     </header>
   )
