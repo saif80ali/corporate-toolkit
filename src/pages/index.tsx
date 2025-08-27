@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -35,18 +36,21 @@ export default function Home() {
             title="Notice Period Calculator"
             description="Enter your resignation date and notice days — get your last working day and recommended handover schedule."
             imgSrc="/resignation.svg"
+            url="/notice-period-calculator"
           />
 
           <FeatureCard
             title="Hike Calculator"
             description="Quickly estimate new CTC, increment %, and monthly take-home after a proposed hike."
             imgSrc="/hike.svg"
+            url="/hike-calculator"
           />
 
           <FeatureCard
             title="AI Mail Generator"
             description="Generate polished resignation, negotiation and onboarding emails. Choose tone and personalize in one click."
             imgSrc="/email.svg"
+            url="/mail-generator"
           />
         </div>
       </section>
@@ -72,9 +76,10 @@ type FeatureCardProps = {
   title: string;
   description: string;
   imgSrc: string;
+  url: string;
 };
 
-function FeatureCard({ title, description, imgSrc }: FeatureCardProps) {
+function FeatureCard({ title, description, imgSrc, url }: FeatureCardProps) {
   return (
     <article className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col gap-4 border border-indigo-100">
       <div className="relative hidden sm:block w-full h-20">
@@ -90,8 +95,9 @@ function FeatureCard({ title, description, imgSrc }: FeatureCardProps) {
       </div>
 
       <div className="mt-2 flex gap-2">
-        <a className="text-sm font-medium text-indigo-600 hover:underline">Open</a>
-        <a className="text-sm text-slate-500 hover:text-indigo-600">Learn more</a>
+        <Link
+          href={url} className="text-sm font-medium text-indigo-600 hover:underline">Open</Link>
+        <Link href="#" className="text-sm text-slate-500 hover:text-indigo-600">Learn more</Link>
       </div>
     </article>
   );
