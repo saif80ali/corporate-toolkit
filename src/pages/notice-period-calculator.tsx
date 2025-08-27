@@ -32,7 +32,7 @@ function NoticePeriodCalculator() {
     return diffDays;
 }
 
-  const debounce = <T extends (...args: any[]) => void>(func: T, delay: number) => {
+  const debounce = <T extends (...args: Parameters<T>) => void>(func: T, delay: number) => {
 
     return (...args: Parameters<T>) => {
       if (timerRef.current) clearTimeout(timerRef.current);
@@ -43,9 +43,9 @@ function NoticePeriodCalculator() {
   };
 
   const noticePeriodCalculator = ()=> {
-    let dateFrom = salary.dateFrom;
-    let noticeDays = Number(salary.noticeDays);
-    let dateTo = salary.dateTo;
+    const dateFrom = salary.dateFrom;
+    const noticeDays = Number(salary.noticeDays);
+    const dateTo = salary.dateTo;
     switch(selectedOption) {
       case "notice":
         if (dateFrom && noticeDays) {

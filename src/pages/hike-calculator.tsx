@@ -17,7 +17,7 @@ function HikeCalculator() {
   
   const [newSalary, setNewSalary] = useState("100");
 
-  const debounce = <T extends (...args: any[]) => void>(func: T, delay: number) => {
+  const debounce = <T extends (...args: Parameters<T>) => void>(func: T, delay: number) => {
 
     return (...args: Parameters<T>) => {
       if (timerRef.current) clearTimeout(timerRef.current);
@@ -28,9 +28,9 @@ function HikeCalculator() {
   };
 
   const hikeCalculator = ()=> {
-    let currentSalary = Number(salary.currentSalary);
-    let newSalary = Number(salary.newSalary);
-    let hikePercentage = Number(salary.hikePercentage);
+    const currentSalary = Number(salary.currentSalary);
+    const newSalary = Number(salary.newSalary);
+    const hikePercentage = Number(salary.hikePercentage);
     switch(selectedOption) {
       case "salary":
         if (currentSalary && newSalary) {
