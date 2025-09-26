@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 function NoticePeriodCalculator() {
   const timerRef = useRef<NodeJS.Timeout>(null);
   const [selectedOption, setSelectedOption] = useState("notice");
-  const enFormatter = new Intl.NumberFormat('en-IN', { style: 'decimal' });
   const [salary, setSalary] = useState({
     dateFrom: new Date().toISOString().split('T')[0],
     noticeDays: 90,
@@ -49,7 +48,7 @@ function NoticePeriodCalculator() {
     switch(selectedOption) {
       case "notice":
         if (dateFrom && noticeDays) {
-          setNoticeDays(addDays(salary.dateFrom, salary.noticeDays));
+          setNoticeDays(addDays(salary.dateFrom, Number(salary.noticeDays)));
         } else {
           setNoticeDays("0");
         }
